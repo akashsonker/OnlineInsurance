@@ -1,0 +1,9 @@
+package com.insurance.daoImpl;
+
+import org.springframework.transaction.annotation.Transactional;
+
+import com.insurance.dao.UserDAO;
+@Transactional
+public class UserDaoImpl implements UserDAO {
+
+}

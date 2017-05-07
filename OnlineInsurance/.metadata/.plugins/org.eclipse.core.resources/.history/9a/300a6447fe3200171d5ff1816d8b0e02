@@ -1,0 +1,10 @@
+package com.insurance.service;
+
+import org.springframework.security.access.annotation.Secured;
+
+import com.concretepage.entity.UserInfo;
+
+public interface UserService {
+	@Secured ({"ROLE_ADMIN"})
+	UserInfo getDataByUserName(String userName);
+}
